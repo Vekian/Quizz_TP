@@ -1,25 +1,22 @@
-<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Quizz Tp</title>
+
+    
+    <title>Document</title>
 </head>
-
 <body>
+    
+</body>
+</html>
 
-
-<?php 
-
-    <?php 
-        include_once('connection.php');
-    ?>
-    <header>
+<header>
             <nav class="navbar navbar-expand-lg" style="background-color: #ED7A27;">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Quizz Tp</a>
@@ -36,7 +33,7 @@
                                 <a class="nav-link" href="#">Classement</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="compte.php">Mon compte</a>
+                                <a class="nav-link" href="#">Mon compte</a>
                             </li>
                         </ul>
                     </div>
@@ -44,70 +41,11 @@
             </nav>
         </header>
 
-    <?php 
-include('login.php');
-    ?>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-include 'header.php';
-
-?>
-
-
-<?php
-
-include 'footer.php';
-
-?>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
