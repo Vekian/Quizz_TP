@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,7 +11,9 @@
 </head>
 
 <body>
-
+    <?php 
+        include_once('connection.php');
+    ?>
     <header>
             <nav class="navbar navbar-expand-lg" style="background-color: #ED7A27;">
                 <div class="container-fluid">
@@ -28,13 +31,17 @@
                                 <a class="nav-link" href="#">Classement</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Mon compte</a>
+                                <a class="nav-link" href="compte.php">Mon compte</a>
                             </li>
                         </ul>
                     </div>
 
             </nav>
         </header>
+
+    <?php 
+include('login.php');
+    ?>
 
 
 
