@@ -16,17 +16,18 @@
             ];
 
                 $_SESSION['LOGGED_USER'] = $loggedUser['pseudo'];
-            
-        } else {
-            $name = htmlspecialchars($_POST['pseudo']);
+        }
+    }
+    if (!isset($loggedUser)) {
+        $name = htmlspecialchars($_POST['pseudo']);
             $avatar = 'images/pikachu.png';
             $insertStatement = $baseQuizz -> prepare("INSERT INTO users (pseudo, avatar) VALUES (:pseudo, :avatar)");
             $insertStatement -> execute([
                 'pseudo' => $name,
                 'avatar' => $avatar
             ]);
-        }
-    }}
+    }
+}
 ?>
 
 <?php
@@ -38,7 +39,7 @@ if (isset($_SESSION['LOGGED_USER'])) {
 ?>
 
 <?php if (!isset($loggedUser)): ?>
-    <form action="login.php" method="POST">
+    <form action="index.php" method="POST">
         <h2>Connectez-vous </h2>
     <?php if(isset($errorMessage)) : ?>
         <div>
