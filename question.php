@@ -6,5 +6,8 @@
     $questionStatement -> execute();
     $questions = $questionStatement -> fetchAll((PDO::FETCH_ASSOC));
 
-    print_r($questions);
+    $arrayAnswer = [];
+    foreach($questions as $question) {
+        $arrayAnswer[$question['question']] = $question['id'];
+    }
 ?>
