@@ -13,7 +13,6 @@
         include_once('login.php');
     }
     else {
-
     $query = 'SELECT * FROM users where pseudo = "' . $_SESSION['LOGGED_USER'] . '"';
     $userStatement = $baseQuizz -> prepare($query);
     $userStatement -> execute();
