@@ -15,20 +15,20 @@
     <title>Document</title>
 </head>
 <body>
-    
-<footer>
-        <div class="container-fluid" style="background-color: #ED7A27;">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p>&copy; 2023 - Tous droits réservés</p>
-                    <a href="https://www.facebook.com/votrepage" target="_blank" class="social-icon"><i class="fab fa-facebook fa-lg"></i></a>
-                    <a href="https://twitter.com/votrepage" target="_blank" class="social-icon"><i class="fab fa-twitter fa-lg"></i></a>
-                    <a href="https://www.instagram.com/votrepage" target="_blank" class="social-icon"><i class="fab fa-instagram fa-lg"></i></a>
-                    <a href="https://www.linkedin.com/in/votrepage" target="_blank" class="social-icon"><i class="fab fa-linkedin fa-lg"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
+<footer style="background-color: #ED7A27;">
+  <p>Retrouvez-nous sur les réseaux sociaux:</p>
+  <ul class="social-icons" style="list-style-type: none; display: flex; justify-content: center;">
+    <li style="margin-right: 10px;"><a href="https://fr-fr.facebook.com/" target="_blank"><i class="fab fa-facebook fa-lg"></i></a></li>
+    <li style="margin-right: 10px;"><a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Dfr" target="_blank"><i class="fab fa-twitter fa-lg"></i></a></li>
+    <li style="margin-right: 10px;"><a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
+    <li><a href="https://www.linkedin.com/authwall?trk=qf&original_referer=https://www.google.com/&sessionRedirect=https%3A%2F%2Ffr.linkedin.com%2F" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></li>
+  </ul>
+</footer>
+
+
+
+
+
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
