@@ -1,7 +1,7 @@
 <?php
     include('connection.php');
-    $id= 1;
-    $query = 'SELECT * FROM questions JOIN quizzs ON questions.id_quizz = quizzs.id WHERE quizzs.id = "'.$id.'"';
+    $id = json_decode(file_get_contents('php://input'), true);
+    $query = 'SELECT * FROM quizzs JOIN questions ON quizzs.id = questions.id_quizz WHERE quizzs.id = "'.$id.'"';
     $questionStatement = $baseQuizz -> prepare($query);
     $questionStatement -> execute();
     $questions = $questionStatement -> fetchAll((PDO::FETCH_ASSOC));
@@ -10,4 +10,6 @@
     foreach($questions as $question) {
         $arrayAnswer[$question['question']] = $question['id'];
     }
+    $jsonAnswer = json_encode($arrayAnswer);
+    echo $jsonAnswer;
 ?>
