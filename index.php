@@ -12,93 +12,13 @@
 </head>
 
 <body>
-
-
-<?php 
-
     <?php 
         include_once('connection.php');
+        include_once('header.php');
     ?>
-    <header>
-            <nav class="navbar navbar-expand-lg" style="background-color: #ED7A27;">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Quizz Tp</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav mx-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Tous les quizz</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Classement</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="compte.php">Mon compte</a>
-                            </li>
-                        </ul>
-                    </div>
-
-            </nav>
-        </header>
-
     <?php 
 include('login.php');
     ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-include 'header.php';
-
-?>
-
-
 <?php
 
 include 'footer.php';
