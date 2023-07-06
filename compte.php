@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/compte.css">
     <title>Mon compte</title>
 </head>
-<body>
+
+<body style="background-color: #FEC671;">
     <?php
     include_once('connection.php');
     include("header.php");
@@ -51,5 +53,9 @@
 <br />
 <a href="logout.php">Se déconnecter</a>
 <?php } ?>
+<div id = "footer">
+<?php include("footer.php"); ?>
+</div>
+
 </body>
 </html>
