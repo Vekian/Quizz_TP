@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+       
     <title>Quizz Tp</title>
+    
 </head>
 <body>
 <header>
@@ -25,7 +27,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="classement-general.php">Classement</a>
 
+
                             <a class="nav-link" href="classement.php">Classement</a>
+
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="compte.php">Mon compte</a>
