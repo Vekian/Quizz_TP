@@ -26,8 +26,6 @@
 
                             <a class="nav-link" href="classement-general.php">Classement</a>
 
-                            <a class="nav-link" href="classement.php">Classement</a>
-
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="compte.php">Mon compte</a>
