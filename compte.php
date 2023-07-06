@@ -9,6 +9,7 @@
 <body>
     <?php
     include_once('connection.php');
+    include("header.php");
     if (!isset($_SESSION['LOGGED_USER'])){
         include_once('login.php');
     }
