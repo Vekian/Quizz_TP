@@ -12,7 +12,9 @@ include_once('connection.php');
     <link rel="stylesheet" href="css/timer.css">
 </head>
 <body>
-
+    <?php  
+    include("header.php");
+    ?>
     <div id="answer">
     </div>
 <script>
@@ -27,14 +29,13 @@ include_once('connection.php');
 	}
 };
     <?php require_once("js/display-quizz.js");?>
-    
-    
-
-
 </script>
 <div id="clock">
 	<span id="seconds">10</span>
 </div>
 
+<?php
+    include('footer.php');
+?>
 </body>
 </html>

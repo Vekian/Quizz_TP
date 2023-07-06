@@ -56,7 +56,7 @@ function displayAnswer(i) {
                 document.getElementById('answer').innerHTML += question + "<br />";
                 for (let key in data) {
                     let value = data[key];
-                    document.getElementById('answer').innerHTML += '<button class="button" value="'+ value + '">' + key + '</button><br />';
+                    document.getElementById('answer').innerHTML += '<button class="button button-5" role="button" value="'+ value + '">' + key + '</button><br />';
                 }
                 let buttons = document.getElementsByClassName('button');
                 setTimeout(function() {
