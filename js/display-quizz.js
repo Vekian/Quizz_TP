@@ -49,20 +49,20 @@ function displayAnswer(i) {
                 }
             })
             .then(function(data) {
-                let question = array[i].slice(0, -1);
                 timeLeft = 10;
                 document.getElementById("seconds").innerHTML = "10";
-                let timeoutId;
-                timeoutId = setTimeout(countdown, 1000);
-                document.getElementById('answer').innerHTML += "<h1 class='text-center'>" + question + "</h1><br /><div class='d-flex text-align-center'>";
+                let timer = setInterval(countdown, 1000);
+                let question = array[i].slice(0, -1);
+                document.getElementById('answer').innerHTML += "<h1 class='text-center m-4'>" + question + "</h1><br />";
                 for (let key in data) {
                     let value = data[key];
-                    document.getElementById('answer').innerHTML += "<button class='button button-5' role='button' value='"+ value + "'>" + key + "</button>";
+                    document.getElementById('answer').innerHTML += "<button class='button button-5 col-3 offset-2 mt-3 mb-4' role='button' value='"+ value + "'>" + key + "</button>";
                 }
-                document.getElementById('answer').innerHTML += "</div>";
                 let buttons = document.getElementsByClassName('button');
-                setTimeout(function() {
+                let timeOver = setTimeout(function() {
                     document.getElementById('answer').innerHTML = "<div class='text-center text-danger'><h1>Temps écoulé</h1></div>";
+                    clearInterval(timer);
+                    document.getElementById("seconds").innerHTML = "0";
                     setTimeout(function() {
                         document.getElementById('answer').innerHTML = "";
                         displayAnswer(i + 1);
@@ -77,9 +77,10 @@ function displayAnswer(i) {
                         button.setAttribute('style', 'background-color: green;')
                         score += 10;
                     };
+                    clearTimeout(timeOver);
+                    clearInterval(timer);
                 setTimeout(function (){
                     document.getElementById('answer').innerHTML = "";
-                    clearTimeout(timeoutId);
                     displayAnswer(i + 1);
                 }, 1000);
                 });
@@ -102,4 +103,3 @@ function displayAnswer(i) {
     }
         }
 
-              
