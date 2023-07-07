@@ -54,6 +54,11 @@ function displayAnswer(i) {
                 let timer = setInterval(countdown, 1000);
                 let question = array[i].slice(0, -1);
                 document.getElementById('answer').innerHTML += "<h1 class='text-center m-4'>" + question + "</h1><br />";
+                for (let i = data.length - 1; i > 0; i--) {
+                    const j = Math.floor(Math.random() * (i + 1));
+                    [data[i], data[j]] = [data[j], data[i]];
+                }
+                console.log(data);
                 for (let key in data) {
                     let value = data[key];
                     document.getElementById('answer').innerHTML += "<button class='button button-5 col-3 offset-2 mt-3 mb-4' role='button' value='"+ value + "'>" + key + "</button>";
