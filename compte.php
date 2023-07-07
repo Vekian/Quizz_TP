@@ -25,24 +25,23 @@
     <h2>Votre pseudo : <?php echo($user['pseudo']) ?></h2> 
     <img src="<?php echo($user['avatar']) ?>" width="200px"/>
 
-    <form action="compte.php" method="post">
+    <form action="modif-compte.php" method="post">
         <label for="pseudo">
         <input type="text" name="pseudo" id="pseudo" value="<?php echo($user['pseudo']);?>">
-        <input type="submit" value="modifier">
-    </form>
-    
-    <form action="compte.php" method="post">
+        <br />
         <label for="avatar">
-    <select id="photo" name="photo">
+    <select id="avatar" name="avatar">
         <option value="images/fleur.png">Fleur</option>
         <option value="images/photo.png">Smiley</option>
         <option value="images/pierre.png">Pierre</option>
         <option value="images/pikachu.png">Pikachu</option>
     </select>
     <br />
-    <img src="" alt="Choisissez votre image préférée" width="100px"/>
-    </form>
+    <img src="" alt="Choisissez votre image préférée" width="100px"/> 
+    <br />
     <input type="submit" value="modifier">
+    </form>
+   
     <script>
     let image = document.querySelector('img');
     document.querySelector("select").addEventListener("change", function (e) {
@@ -51,11 +50,12 @@
     });
 </script>
 <br />
+<h4> Vous voulez vous déconnecter ? </h4>
 <a href="logout.php">Se déconnecter</a>
+
 <?php } ?>
 <div id = "footer">
 <?php include("footer.php"); ?>
 </div>
-
 </body>
 </html>

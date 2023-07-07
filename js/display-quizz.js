@@ -52,15 +52,17 @@ function displayAnswer(i) {
                 let question = array[i].slice(0, -1);
                 timeLeft = 10;
                 document.getElementById("seconds").innerHTML = "10";
-                setTimeout(countdown, 1000);
-                document.getElementById('answer').innerHTML += question + "<br />";
+                let timeoutId;
+                timeoutId = setTimeout(countdown, 1000);
+                document.getElementById('answer').innerHTML += "<h1 class='text-center'>" + question + "</h1><br /><div class='d-flex text-align-center'>";
                 for (let key in data) {
                     let value = data[key];
-                    document.getElementById('answer').innerHTML += '<button class="button" value="'+ value + '">' + key + '</button><br />';
+                    document.getElementById('answer').innerHTML += "<button class='button button-5' role='button' value='"+ value + "'>" + key + "</button>";
                 }
+                document.getElementById('answer').innerHTML += "</div>";
                 let buttons = document.getElementsByClassName('button');
                 setTimeout(function() {
-                    document.getElementById('answer').innerHTML = "Temps écoulé";
+                    document.getElementById('answer').innerHTML = "<div class='text-center text-danger'><h1>Temps écoulé</h1></div>";
                     setTimeout(function() {
                         document.getElementById('answer').innerHTML = "";
                         displayAnswer(i + 1);
@@ -77,6 +79,7 @@ function displayAnswer(i) {
                     };
                 setTimeout(function (){
                     document.getElementById('answer').innerHTML = "";
+                    clearTimeout(timeoutId);
                     displayAnswer(i + 1);
                 }, 1000);
                 });
@@ -98,12 +101,5 @@ function displayAnswer(i) {
                 }); 
     }
         }
-    
-    function shuffleArray(array) {
-        for (let i = array.length - 1; i > 0; i--) {
-            const j = Math.floor(Math.random() * (i + 1));
-            [array[i], array[j]] = [array[j], array[i]];
-        }
-        return array;
-        }
+
               
