@@ -1,8 +1,3 @@
-<?php
-session_start();
-include_once('connection.php');
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,31 +9,17 @@ include_once('connection.php');
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 <body>
-    <?php  
-    include("header.php");
-    ?>
-    <div id="answer">
-    </div>
-<script>
-    let idQuizz = <?php echo($_GET['id']); ?>;
-    let name = "<?php echo($_SESSION['LOGGED_USER']) ?>";
-    
-    function countdown() {
-	timeLeft--;
-	document.getElementById("seconds").innerHTML = String( timeLeft );
-	if (timeLeft > 0) {
-		setTimeout(countdown, 1000);
-	}
-};
-    <?php require_once("js/display-quizz.js");?>
-</script>
+<h1 class="text-center">Question</h1><br /><div class='d-flex justify-content-center' >
+<button class="button button-5" role="button"> Bouton 1</button><br />
+<button class="button button-5" role="button"> Bouton 1</button><br />
+<button class="button button-5" role="button"> Bouton 1</button><br />
+<button class="button button-5" role="button"> Bouton 1</button><br />
+</div>
+
 <div id="clock">
 	<span id="seconds">10</span>
 </div>
 
-<?php
-    include('footer.php');
-?>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
