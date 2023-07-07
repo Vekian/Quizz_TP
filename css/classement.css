@@ -12,7 +12,7 @@ body {
 }
 
 h1 {
-    color: #ED7A27;
+    color: #c24fbe;
     text-align: center;
 }
 
@@ -20,14 +20,14 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
-    background-color: #ffffff;
+    background-color: violet;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 th {
-    background-color: #ED7A27;
-    color: white;
+    background-color: #9a308d;
+    color: rgb(250, 222, 252);
     font-weight: bold;
     padding: 10px;
     text-align: left;
@@ -38,12 +38,12 @@ td {
 }
 
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: #ca83c4;
 }
 
 .no-results {
     text-align: center;
-    color: #ED7A27;
+    color: #f15dec;
     margin-top: 20px;
 }
 
@@ -55,7 +55,7 @@ tr:nth-child(even) {
 #footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #ED7A27;
+    background-color: #e65ef0;
     color: white;
     position: fixed;
     bottom: 0;
@@ -107,6 +107,3 @@ tr:nth-child(even) {
       font-size: 16px;
     }
   }
-  
-  /* Ajoutez d'autres règles CSS spécifiques aux différentes tailles d'écran si nécessaire */
-  

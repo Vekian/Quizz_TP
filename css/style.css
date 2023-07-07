@@ -5,7 +5,7 @@ body {
   }
   
   section, aside {
-    background-color: #FFC164;
+    background-color: #ac71f0;
     padding: 40px 0;
   }
   
@@ -25,7 +25,7 @@ body {
 
   
   .navbar {
-    background-color: #FFC164;
+    background-color: #d72be7;
     padding: 10px 0;
   }
   
@@ -40,14 +40,14 @@ body {
   }
   
   .btn {
-    background-color: #FFC164;
+    background-color: #fa38c9;
     color: #fff;
-    border-color: #FFC164;
+    border-color: #d026a3;
   }
   
   .btn:hover {
-    background-color: #FFA941;
-    border-color: #FFA941;
+    background-color: #eb5cd3;
+    border-color: #ff41d9;
   }
   
   .ml-auto {
@@ -56,7 +56,7 @@ body {
   #footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #ED7A27;
+    background-color: #c762d7;;
     color: white;
     position: fixed;
     bottom: 0;

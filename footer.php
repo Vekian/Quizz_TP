@@ -15,7 +15,8 @@
     <title>Document</title>
 </head>
 <body>
-<footer style="background-color: #ED7A27;">
+ 
+  <footer style = "background-color: #c762d7;">
   <p>Retrouvez-nous sur les réseaux sociaux:</p>
   <ul class="social-icons" style="list-style-type: none; display: flex; justify-content: center;">
     <li style="margin-right: 10px;"><a href="https://fr-fr.facebook.com/" target="_blank"><i class="fab fa-facebook fa-lg"></i></a></li>
@@ -25,6 +26,8 @@
   </ul>
 </footer>
 
+
+  
 
 
 

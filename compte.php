@@ -10,7 +10,14 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
 
+
+  
+<body>
+
+  
 <body style="background-color: #FEC671;" >
+
+  
     <?php
     include_once('connection.php');
     include("header.php");
