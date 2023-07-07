@@ -8,7 +8,7 @@
     <title>Mon compte</title>
 </head>
 
-<body style="background-color: #FEC671;">
+<body>
     <?php
     include_once('connection.php');
     include("header.php");
