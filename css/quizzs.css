@@ -1,0 +1,48 @@
+button {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ED7A27;
+    color: #FFFFFF;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #FF9429;
+  }
+  
+  /* Style du contenu dans les boutons */
+  button div {
+    margin-bottom: 5px;
+  }
+  
+  button div:first-child {
+    font-weight: bold;
+  }
+  
+  button div:last-child {
+    font-size: 14px;
+  }
+  
+  /* Style des lignes de boutons */
+  button:not(:last-child) {
+    border-bottom: 1px solid #FFFFFF;
+  }
+  
+  /* Style des brèves animations */
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Appliquer l'animation aux boutons */
+  button {
+    animation: fade-in 0.5s ease-in-out;
+  }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/quizzs.css">
     <title>Document</title>
 </head>
 <body>
@@ -74,6 +75,75 @@ include 'header.php';
         <div class="col-12">
           <h2 class="mt-5">Catégories</h2>
           <p>Voici toutes les catégories de quizz</p>
+          <!DOCTYPE html>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #333333;
+            color: #ffffff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+        <?php include 'connection.php'; ?>
+    
+
+
+        <div class="container">
+
+        <?php
+            $query = 'SELECT category FROM quizzs';
+            $categoryStatement = $baseQuizz->prepare($query);
+            $categoryStatement->execute();
+            $categories = $categoryStatement->fetchAll(PDO::FETCH_ASSOC);
+        ?>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($categories as $category) : ?>
+                    <tr>
+                        <td><?php echo $category['category']; ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    </div>
+<
+
+
         </div>
       </div>
     </div>
