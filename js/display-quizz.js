@@ -50,6 +50,7 @@ function displayAnswer(i) {
             })
             .then(function(data) {
                 timeLeft = 10;
+                score += 20;
                 document.getElementById("seconds").innerHTML = "10";
                 let timer = setInterval(countdown, 1000);
                 let question = array[i].slice(0, -1);
@@ -95,7 +96,8 @@ function displayAnswer(i) {
                 console.log(error);
             });}
         else {
-            document.getElementById('answer').innerHTML = "Le quizz est terminé ! <br />Votre score est de " + score;
+            document.getElementById("seconds").innerHTML = "";
+            document.getElementById('answer').innerHTML = "<div style='color: white;'>Le quizz est terminé ! <br />Votre score est de </div>" + score;
             let objet = {
                 'score': score,
                 'name' : name,
