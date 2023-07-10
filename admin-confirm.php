@@ -23,7 +23,7 @@ for ($i = 1; $i <= $_POST['numberOfQuestions']; $i++) {
     $question = $_POST['question' . $i];
     $insertStatement = $baseQuizz -> prepare("INSERT INTO questions (question, id_quizz) VALUES (:question, :id_quizz)");
     $insertStatement -> execute([
-        'question' => $quizz,
+        'question' => $question,
         'id_quizz' => $idQuizz
     ]);
 
