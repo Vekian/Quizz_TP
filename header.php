@@ -11,7 +11,7 @@
     <title>Quizz Tp</title>
     <style>
      body {
-  background-image: url('images/fond-galaxie.avif');    
+  background-image: url('images/fond-clair.jpg');    
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -25,7 +25,7 @@ padding: 0;
 </head>
 <body>
 <header>
-        <nav class="navbar navbar-expand-lg" style="background-color: #c762d7;">
+        <nav class="navbar navbar-expand-lg" style="background-color:  #0989ed ;">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.php">Quizz Tp</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"

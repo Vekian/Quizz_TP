@@ -11,18 +11,18 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Quizz Tp</title>
 
-    
-    <title>Document</title>
+
+
 </head>
 <body>
  
-  <footer style = "background-color: #c762d7;">
+  <footer style = "background-color: 0989ed ;">
   <p>Retrouvez-nous sur les réseaux sociaux:</p>
   <ul class="social-icons" style="list-style-type: none; display: flex; justify-content: center;">
-    <li style="margin-right: 10px;"><a href="https://fr-fr.facebook.com/" target="_blank"><i class="fab fa-facebook fa-lg"></i></a></li>
-    <li style="margin-right: 10px;"><a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Dfr" target="_blank"><i class="fab fa-twitter fa-lg"></i></a></li>
-    <li style="margin-right: 10px;"><a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
-    <li><a href="https://www.linkedin.com/authwall?trk=qf&original_referer=https://www.google.com/&sessionRedirect=https%3A%2F%2Ffr.linkedin.com%2F" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></li>
+    <li style="margin-right: 10px;"><a href="https://fr-fr.facebook.com/" target="_blank"><i class="fa-brands fa-facebook fa-lg" style="color: #000000;"></i></a></li>
+    <li style="margin-right: 10px;"><a href="https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Dfr" target="_blank"><i class="fa-brands fa-twitter fa-lg" style="color: #000000;"></i></a></li>
+    <li style="margin-right: 10px;"><a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fab fa-instagram fa-lg" style = "color:#000000"></i></a></li>
+    <li><a href="https://www.linkedin.com/authwall?trk=qf&original_referer=https://www.google.com/&sessionRedirect=https%3A%2F%2Ffr.linkedin.com%2F" target="_blank"><i class="fab fa-linkedin fa-lg" style="color:#000000"></i></a></li>
   </ul>
 </footer>
 
