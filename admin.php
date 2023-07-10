@@ -13,18 +13,18 @@ foreach($quizzs as $quizz) {
 }
 
 ?>
-<label for="numberOfQuestions">Numbre de réponses</label>
-    <input type="number" name="numberOfQuestions" id="numberOfQuestions">
 <div id="answer">
 </div>
 <form method="POST" action="admin-confirm.php">
-    <label for="quizz">Nom du quizz</label>
-    <input type="text" name="quizz" id="quizz">
-    <label for="category">Nom de la categorie</label>
-    <input type="text" name="category" id="category">
-    <div id="question">
-    </div>
-    <input type="submit" value="envoyer">
+<label for="numberOfQuestions">Nombre de questions</label>
+<input type="number" name="numberOfQuestions" id="numberOfQuestions">
+<label for="quizz">Nom du quizz</label>
+<input type="text" name="quizz" id="quizz">
+<label for="category">Nom de la categorie</label>
+<input type="text" name="category" id="category">
+<div id="question">
+</div>
+<input type="submit" value="envoyer">
 </form>
 <script>
     let number= "";
@@ -37,9 +37,14 @@ foreach($quizzs as $quizz) {
         document.getElementById('question')
                 .innerHTML += '<label for="question' + i + '">Question' + i + '</label><input type="text" name="question' + i + '" id="question' + i + '">';     
     for(let j = 1; j <= 4; j++){
+        if (j < 4) {
         document.getElementById('question')
-                .innerHTML += '<label for="answer' + i + "£" + j + '">answer' + i + "£" + j + '</label><input type="text" name="answer' + i + '[]" id="answer' + i + "£" + j + '">';
-    }
+                .innerHTML += '<label for="answer' + i + "£" + j + '">Answer' + i + "£" + j + '</label><input type="text" name="answer' + i + '[]" id="answer' + i + "£" + j + '">';
+        }
+        else {
+        document.getElementById('question')
+                .innerHTML += '<label for="answer' + i + "£" + j + '">correctanswer' + i + "£" + j + '</label><input type="text" name="answer' + i + '[]" id="answer' + i + "£" + j + '">';
+    }}
     document.getElementById('question')
                 .innerHTML += '<br />';
             }

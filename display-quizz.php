@@ -29,6 +29,7 @@ include_once('connection.php');
     let name = "<?php echo($_SESSION['LOGGED_USER']) ?>";
     
     function countdown() {
+        score -= 2;
         timeLeft--;
         document.getElementById("seconds").innerHTML = String( timeLeft );
         }
