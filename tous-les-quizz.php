@@ -27,9 +27,9 @@
           $quizzStatement->execute();
           $quizzs = $quizzStatement->fetchAll(PDO::FETCH_ASSOC);
 
-
           $arrayUnique = uniqueValue($quizzs);
           $arrayCount = countValue($quizzs);
+          $arrayOfId = getId($quizzs);
           function uniqueValue($quizzs)
           {
             $array = [];
@@ -39,6 +39,14 @@
             return $array;
           }
           ;
+          function getId($quizzs)
+          {
+            $array = [];
+            foreach ($quizzs as $quizz) {
+              $array[$quizz['name']] = $quizz['id_quizz'];
+            }
+            return $array;
+          }
 
           function countValue($arrays)
           {
@@ -56,9 +64,13 @@
             }
             return $array1;
           }
-
-          $id = 1;
+          $id = "";
           foreach ($arrayUnique as $key => $value) {
+            foreach($arrayOfId as $keyId => $valueId) {
+                if ($key === $keyId) {
+                  $id = $valueId;
+                }
+            }
             echo ('<button onclick="window.location.href = \'display-quizz.php?id=' . $id . '\';" ><div>Nom : ' . $key . '<br />');
             echo ('<div>Categorie :  ' . $value . '</div>');
             foreach ($arrayCount as $name => $count) {
@@ -66,7 +78,6 @@
                 echo ('<div>Ce quizz contient ' . $count . ' questions</div></div></button><br />');
               }
             }
-            $id++;
           }
 
           ?>
