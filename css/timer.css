@@ -2,7 +2,7 @@
 	width: 200px;
 	height: 200px;
 	border-radius: 50%;
-	background-color: rgb(223, 116, 15);
+	background-color: rgb(147, 175, 228);
 }
 
 span {
@@ -12,7 +12,7 @@ span {
 	padding-top: 30px;
 	text-align: center;
 	font-size: 100px;
-	color: red;
+	color: rgb(20, 34, 231);
 }
 
 
@@ -20,7 +20,7 @@ span {
 .button-5 {
   align-items: center;
   background-clip: padding-box;
-  background-color: #fa6400;
+  background-color: #9bc3fc;
   border: 1px solid transparent;
   border-radius: .25rem;
   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
@@ -48,7 +48,7 @@ span {
 
 .button-5:hover,
 .button-5:focus {
-  background-color: #9f669d;
+  background-color: #4653d8;
   box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
 }
 
@@ -63,13 +63,15 @@ span {
 }
 
 
+
 #footer {
   text-align: center;
   padding: 10px 0;
-  background-color: #c762d7;;
+  background-color: #0989ed ;
   color: white;
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
 }
+

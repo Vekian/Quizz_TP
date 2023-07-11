@@ -110,13 +110,11 @@
             }
 
             th {
-              background-color: #612e70;
+              background-color:  #8068f7 ;
               color: white;
             }
 
-            tr:nth-child(even) {
-              background-color: #8f168f;
-            }
+          
           </style>
           </head>
 
