@@ -1,23 +1,28 @@
-p {
+body {
+  background-image: url('images/fond-galaxie.avif');    
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+
+}
+
+p{
   text-align: center;
   color: white;
 }
 
-.button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; 
-  height: 100vh
-}
-
-.button {
-  display: inline-block;
-  padding: 10px 20px;
+button {
+  display: block;
+  width: 300px;
+  padding: 10px;
   margin-bottom: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #67beaf;
+  background-color:   #67beaf  ;
   color: #FFFFFF;
   font-size: 16px;
   text-align: center;
@@ -26,29 +31,26 @@ p {
   transition: background-color 0.3s;
 }
 
-.button:hover {
-  background-color: #46efec;
-}
-
-.button:first-child {
-  margin-top: 10px;
-}
-
-.button:last-child {
-  margin-bottom: 0;
+button:hover {
+  background-color:  #46efec ;
 }
 
 /* Style du contenu dans les boutons */
-.button div {
+button div {
   margin-bottom: 5px;
 }
 
-.button div:first-child {
+button div:first-child {
   font-weight: bold;
 }
 
-.button div:last-child {
+button div:last-child {
   font-size: 14px;
+}
+
+/* Style des lignes de boutons */
+button:not(:last-child) {
+  border-bottom: 1px solid #FFFFFF;
 }
 
 /* Style des brèves animations */
@@ -58,7 +60,7 @@ p {
 }
 
 /* Appliquer l'animation aux boutons */
-.button {
+button {
   animation: fade-in 0.5s ease-in-out;
 }
 
@@ -66,9 +68,10 @@ p {
 #footer {
   text-align: center;
   padding: 10px 0;
-  background-color: #0989ed;
+  background-color: #0989ed ;
   color: white;
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
 }
