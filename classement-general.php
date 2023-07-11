@@ -79,7 +79,7 @@
                         datasets: [{
                             label: 'Score total',
                             data: <?php echo $scoreData; ?>,
-                            backgroundColor: '     #0ee5be    '
+                            backgroundColor: '  #24fce9 '
                         }]
                     },
                     options: {
