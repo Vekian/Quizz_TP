@@ -10,6 +10,19 @@
     foreach($questions as $question) {
         $arrayAnswer[$question['question']] = $question['id'];
     }
-    $jsonAnswer = json_encode($arrayAnswer);
+
+    function shuffle_assoc($list) {
+        if (!is_array($list)) return $list;
+       
+        $keys = array_keys($list);
+        shuffle($keys);
+        $random = array();
+        foreach ($keys as $key)
+          $random[$key] = $list[$key];
+        return $random;
+      }
+    
+    $randomArray = shuffle_assoc($arrayAnswer);
+    $jsonAnswer = json_encode($randomArray);
     echo $jsonAnswer;
 ?>

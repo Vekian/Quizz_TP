@@ -1,24 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Résultats</title>
-    <link rel="stylesheet" href="css/classement.css">
-</head>
-
-<body>
-    <?php include 'connection.php'; ?>
-    <?php include 'header.php'; ?>
-
-    <!DOCTYPE html>
-    <html>
-
-    <head>
-        <title>Graphique des scores</title>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    </head>
-
-    <body style="background-color: #FEC671;">
+<?php include 'header.php'; ?>
+<?php include 'traitement/connection.php'; ?>
         <div class="container">
             <h1>Classement des scores</h1>
             <?php
@@ -65,10 +46,7 @@
                 echo '<p class="no-results">Aucun résultat trouvé.</p>';
             }
             ?>
-
             <canvas id="chartCanvas"></canvas>
-
-
             <script>
                 // Créer un nouveau graphique en barres
                 let ctx = document.getElementById('chartCanvas').getContext('2d');
@@ -97,10 +75,4 @@
                 });
             </script>
         </div>
-        <div id="footer">
-            <?php include 'footer.php'; ?>
-        </div>
-
-    </body>
-
-    </html>
+<?php include 'footer.php'; ?>

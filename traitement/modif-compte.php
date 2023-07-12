@@ -19,4 +19,4 @@ $inserUser -> execute([
         'avatar' => $avatar
         ]);
 $_SESSION['LOGGED_USER'] = $newPseudo;};
-header('Location:compte.php');
+header('Location:../compte.php');

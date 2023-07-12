@@ -1,7 +1,5 @@
 <?php
 include('connection.php');
-
-
 $quizz = $_POST['quizz'];
 $category = $_POST['category'];
 
@@ -53,4 +51,4 @@ for ($i = 1; $i <= $_POST['numberOfQuestions']; $i++) {
         }
     }
 }
-?>
+header('Location:admin.php');

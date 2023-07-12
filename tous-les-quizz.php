@@ -1,26 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/quizz.css">
-  <title>Document</title>
-
-</head>
-
-<body>
-  <?php include 'header.php'; ?>
-
+<?php include 'header.php'; ?>
   <section>
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1 class="mt-5">Liste des quizzs</h1>
+          <h1 class="mt-5 text-center">Liste des quizzs</h1>
           <p>Voici tous les quizzs que nous proposons</p>
           <?php
-          include('connection.php');
+          include('traitement/connection.php');
 
           $query = 'SELECT * FROM quizzs JOIN questions ON quizzs.id = questions.id_quizz';
           $quizzStatement = $baseQuizz->prepare($query);
@@ -65,13 +51,14 @@
             return $array1;
           }
           $id = "";
+          echo ('<div class="d-flex justify-content-center row" >');
           foreach ($arrayUnique as $key => $value) {
             foreach($arrayOfId as $keyId => $valueId) {
                 if ($key === $keyId) {
                   $id = $valueId;
                 }
             }
-            echo ('<button onclick="window.location.href = \'display-quizz.php?id=' . $id . '\';" ><div>Nom : ' . $key . '<br />');
+            echo ('<button class="col-3 m-4" onclick="window.location.href = \'display-quizz.php?id=' . $id . '\';" ><div>Nom : ' . $key . '<br />');
             echo ('<div>Categorie :  ' . $value . '</div>');
             foreach ($arrayCount as $name => $count) {
               if ($name == $key) {
@@ -79,7 +66,7 @@
               }
             }
           }
-
+          echo ('</div>');
           ?>
         </div>
       </div>
@@ -90,51 +77,8 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2 class="mt-5">Catégories</h2>
+          <h2 class="mt-5 text-center">Catégories</h2>
           <p>Voici toutes les catégories de quizz</p>
-          <!DOCTYPE html>
-
-          <style>
-            body {
-              font-family: Arial, sans-serif;
-              background-color: #f2f2f2;
-              margin: 0;
-              padding: 0;
-            }
-
-            .container {
-              max-width: 600px;
-              margin: 0 auto;
-              padding: 20px;
-            }
-
-            table {
-              width: 100%;
-              border-collapse: collapse;
-            }
-
-            th,
-            td {
-              padding: 10px;
-              text-align: left;
-              color: white;
-            }
-
-            th {
-              background-color:  #8068f7 ;
-              color: white;
-            }
-
-          
-          </style>
-          </head>
-
-          <body>
-
-            <?php include 'connection.php'; ?>
-
-
-
             <div class="container">
 
               <?php
@@ -161,15 +105,8 @@
                 </tbody>
               </table>
             </div>
-            < </div>
+          </div>
         </div>
       </div>
   </aside>
-
-  <div id=footer>
     <?php include 'footer.php'; ?>
-  </div>
-
-</body>
-
-</html>

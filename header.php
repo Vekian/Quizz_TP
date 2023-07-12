@@ -1,43 +1,36 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-
-        <link rel="stylesheet" href="css/header.css">
-
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
        
-    <title>Quizz Tp</title>
-    <style>
-     body {
-  background-image: url('images/fond-clair.jpg');    
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 0;
-}
-    </style>
-    
+    <title>QuizzMaster</title>
 </head>
 <body>
 <header>
-  <nav class="navbar navbar-expand-lg" style="background-color: #0989ed;">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="index.php">Quizz Tp</a>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid col-10">
+      <a class="navbar-brand ms-5" href="index.php">QuizzMaster</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse offset-6" id="navbarNav">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link" href="tous-les-quizz.php">Tous les quizz</a>
+            <a class="nav-link " href="tous-les-quizz.php">Tous les quizz</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="classement-general.php">Classement</a>
@@ -50,9 +43,3 @@ padding: 0;
     </div>
   </nav>
 </header>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-</body>
-</html>
