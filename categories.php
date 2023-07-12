@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -24,13 +25,14 @@
             border-collapse: collapse;
         }
 
-        th, td {
+        th,
+        td {
             padding: 10px;
             text-align: left;
         }
 
         th {
-            background-color:  #f3c2ec ;
+            background-color: #f3c2ec;
             color: #ffffff;
         }
 
@@ -39,19 +41,20 @@
         }
     </style>
 </head>
+
 <body>
 
-        <?php include 'connection.php'; ?>
-        <?php include 'header.php'; ?>
+    <?php include 'connection.php'; ?>
+    <?php include 'header.php'; ?>
 
 
-        <div class="container">
+    <div class="container">
 
         <?php
-            $query = 'SELECT category FROM quizzs';
-            $categoryStatement = $baseQuizz->prepare($query);
-            $categoryStatement->execute();
-            $categories = $categoryStatement->fetchAll(PDO::FETCH_ASSOC);
+        $query = 'SELECT category FROM quizzs';
+        $categoryStatement = $baseQuizz->prepare($query);
+        $categoryStatement->execute();
+        $categories = $categoryStatement->fetchAll(PDO::FETCH_ASSOC);
         ?>
 
         <table>
@@ -61,17 +64,19 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach ($categories as $category) : ?>
+                <?php foreach ($categories as $category): ?>
+    
                     <tr>
-                        <td><?php echo $category['category']; ?></td>
+                        <td>
+                            <?php echo $category['category']; ?>
+                        </td>
                     </tr>
                 <?php endforeach; ?>
             </tbody>
         </table>
+                 
+
     </div>
 </body>
+
 </html>
-
-
-
-

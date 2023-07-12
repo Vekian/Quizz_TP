@@ -15,16 +15,25 @@ header {
 
 
   .navbar-brand {
+    display: flex;
+    align-items: center;
     font-size: 24px;
     font-weight: bold;
+    color: #4c80d3;
+    text-decoration: none;
+    transition: color 0.3s;
   }
   
+  
+  .navbar-brand:hover {
+    color: #706ce3;
+  }
   .navbar-toggler {
     border-color: transparent;
   }
   
   .nav-link {
-    color: #fff;
+    color: black;
     font-size: 18px;
     text-transform: uppercase;
     padding: 10px 15px;
@@ -33,6 +42,6 @@ header {
   }
   
   .nav-link:hover {
-    background-color: #fff;
+    background-color: #689ce1;
     color: #8cbce0;
   }

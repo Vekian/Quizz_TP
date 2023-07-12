@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/bulles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/images-arriere-plan.css">
+    <link rel="stylesheet" href="css/images-arriere-plan.css">
     <title>Quizz Tp</title>
 </head>
 
@@ -28,10 +28,19 @@
             </div>
         </div>
     </div>
-    <div class="animation-container">
-        <div class="animation"></div>
+    <div class="bubble-animation">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        
+
+        <script>
+        <?php require_once("js/bubble.js");?>
+        </script>
     </div>
-    
+
+
 
     <script>
         document.getElementById("startQuizButton").addEventListener("click", function () {
@@ -40,7 +49,7 @@
         });
     </script>
     <div id="footer">
-        <?php include_once('footer.php'); ?>
+        <?php include('footer.php'); ?>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
