@@ -20,7 +20,7 @@
           <h1 class="mt-5">Liste des quizzs</h1>
           <p>Voici tous les quizzs que nous proposons</p>
           <?php
-          include('connection.php');
+           include_once('connection.php');
 
           $query = 'SELECT * FROM quizzs JOIN questions ON quizzs.id = questions.id_quizz';
           $quizzStatement = $baseQuizz->prepare($query);
